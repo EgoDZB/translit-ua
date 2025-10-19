@@ -1,0 +1,165 @@
+{
+  "abc": "АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЮЯабвгґдеєжзиіїйклмнопрстуфхцчшщюя",
+  "symbols": [
+    {
+      "cyr": "а",
+      "lat": "a",
+      "latStart": null
+    },
+    {
+      "cyr": "б",
+      "lat": "b",
+      "latStart": null
+    },
+    {
+      "cyr": "в",
+      "lat": "v",
+      "latStart": null
+    },
+    {
+      "cyr": "г",
+      "lat": "h",
+      "latStart": null
+    },
+    {
+      "cyr": "ґ",
+      "lat": "g",
+      "latStart": null
+    },
+    {
+      "cyr": "д",
+      "lat": "d",
+      "latStart": null
+    },
+    {
+      "cyr": "е",
+      "lat": "e",
+      "latStart": null
+    },
+    {
+      "cyr": "є",
+      "lat": "ie",
+      "latStart": "ye"
+    },
+    {
+      "cyr": "ж",
+      "lat": "zh",
+      "latStart": null
+    },
+    {
+      "cyr": "з",
+      "lat": "z",
+      "latStart": null
+    },
+    {
+      "cyr": "и",
+      "lat": "y",
+      "latStart": null
+    },
+    {
+      "cyr": "і",
+      "lat": "i",
+      "latStart": null
+    },
+    {
+      "cyr": "ї",
+      "lat": "i",
+      "latStart": "yi"
+    },
+    {
+      "cyr": "й",
+      "lat": "i",
+      "latStart": "y"
+    },
+    {
+      "cyr": "к",
+      "lat": "k",
+      "latStart": null
+    },
+    {
+      "cyr": "л",
+      "lat": "l",
+      "latStart": null
+    },
+    {
+      "cyr": "м",
+      "lat": "m",
+      "latStart": null
+    },
+    {
+      "cyr": "н",
+      "lat": "n",
+      "latStart": null
+    },
+    {
+      "cyr": "о",
+      "lat": "o",
+      "latStart": null
+    },
+    {
+      "cyr": "п",
+      "lat": "p",
+      "latStart": null
+    },
+    {
+      "cyr": "р",
+      "lat": "r",
+      "latStart": null
+    },
+    {
+      "cyr": "с",
+      "lat": "s",
+      "latStart": null
+    },
+    {
+      "cyr": "т",
+      "lat": "t",
+      "latStart": null
+    },
+    {
+      "cyr": "у",
+      "lat": "u",
+      "latStart": null
+    },
+    {
+      "cyr": "ф",
+      "lat": "f",
+      "latStart": null
+    },
+    {
+      "cyr": "х",
+      "lat": "kh",
+      "latStart": null
+    },
+    {
+      "cyr": "ц",
+      "lat": "ts",
+      "latStart": null
+    },
+    {
+      "cyr": "ч",
+      "lat": "ch",
+      "latStart": null
+    },
+    {
+      "cyr": "ш",
+      "lat": "sh",
+      "latStart": null
+    },
+    {
+      "cyr": "щ",
+      "lat": "shch",
+      "latStart": null
+    },
+    {
+      "cyr": "ю",
+      "lat": "iu",
+      "latStart": "yu"
+    },
+    {
+      "cyr": "я",
+      "lat": "ia",
+      "latStart": "ya"
+    }
+  ]
+}
