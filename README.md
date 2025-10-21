@@ -2,6 +2,8 @@
 
 <img src="src/main/resources/META-INF/pluginIcon.svg" width="120" alt="TranslitUA Logo">
 
+[JetBrains Marketplace](https://plugins.jetbrains.com/plugin/28779-translitua)
+
 Plugin for transliterating Cyrillic text in Ukrainian into Latin script. Based on the official transliteration table approved by the Verkhovna Rada of Ukraine.
 
 Suitable for transliterating names, surnames, and untranslatable names of places, streets, etc.
