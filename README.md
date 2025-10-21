@@ -1,6 +1,6 @@
 # TranslitUA
 
- <img src="src/main/resources/META-INF/pluginIcon.svg" width="120" alt="TranslitUA Logo">
+<img src="src/main/resources/META-INF/pluginIcon.svg" width="120" alt="TranslitUA Logo">
 
 Plugin for transliterating Cyrillic text in Ukrainian into Latin script. Based on the official transliteration table approved by the Verkhovna Rada of Ukraine.
 
