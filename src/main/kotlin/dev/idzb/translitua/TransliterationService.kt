@@ -16,9 +16,15 @@ data class Symbol(
     val latStart: String?
 )
 
+data class ValidationResult(
+    val isValid: Boolean,
+    val invalidChars: Set<Char> = emptySet()
+)
+
 object TransliterationService {
     private val abcMap: AbcMap
     private val cyrToLatMap: Map<Char, Symbol>
+    private val validUkrainianChars: Set<Char>
 
     private val apostrophes = setOf('\'', '\u2018', '\u2019', '`', '\u00B4', '\u02BC')
 
@@ -31,6 +37,7 @@ object TransliterationService {
         reader.close()
 
         cyrToLatMap = abcMap.symbols.associateBy { it.cyr[0] }
+        validUkrainianChars = abcMap.abc.toSet()
     }
 
     private fun isAllUpperCase(text: String, start: Int): Boolean {
@@ -40,6 +47,21 @@ object TransliterationService {
             i++
         }
         return true
+    }
+
+    fun validateText(text: String): ValidationResult {
+        val invalidChars = mutableSetOf<Char>()
+
+        for (char in text) {
+            if (char.isLetter() && char !in validUkrainianChars) {
+                invalidChars.add(char)
+            }
+        }
+
+        return ValidationResult(
+            isValid = invalidChars.isEmpty(),
+            invalidChars = invalidChars
+        )
     }
 
     fun transliterate(text: String): String {

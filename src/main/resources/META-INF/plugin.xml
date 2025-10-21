@@ -13,8 +13,11 @@
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
     <description><![CDATA[
-        Enter short description for your plugin here.<br>
-        <em>most HTML tags may be used</em>
+        <p>Plugin for transliterating Cyrillic text in Ukrainian into Latin script. Based on the official transliteration table approved by the Verkhovna Rada of Ukraine.</p>
+        <p>Suitable for transliterating names, surnames, and untranslatable names of places, streets, etc.</p>
+        <p>More details here <a href="https://zakon.rada.gov.ua/laws/show/55-2010-п">https://zakon.rada.gov.ua/laws/show/55-2010-п</a></p>
+        <br />
+        <p>Special thanks to <a href="https://dribbble.com/Eugene_V">Eugene_V</a> for the graphics.</p>
     ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -24,7 +27,7 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <notificationGroup id="TranslitUA.NotificationGroup" displayType="BALLOON"/>
     </extensions>
 
     <actions>
