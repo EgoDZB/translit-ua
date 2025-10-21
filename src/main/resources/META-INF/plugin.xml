@@ -20,8 +20,13 @@
         <p>Special thanks to <a href="https://dribbble.com/Eugene_V">Eugene_V</a> for the graphics.</p>
     ]]></description>
 
+    <change-notes><![CDATA[
+    Initial release
+  ]]></change-notes>
+
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <idea-version since-build="231" until-build="251.*"/>
     <depends>com.intellij.modules.platform</depends>
 
     <!-- Extension points defined by the plugin.

@@ -20,34 +20,40 @@ dependencies {
     intellijPlatform {
         create("IC", "2025.1.4.1")
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
+        pluginVerifier()
     }
 }
 
 intellijPlatform {
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "251"
+            sinceBuild = "231"
+            untilBuild = "251.*"
         }
 
         changeNotes = """
             Initial version
         """.trimIndent()
     }
+
+    pluginVerification {
+        ides {
+            create("IC", "2023.1")
+            create("IC", "2024.1")
+            create("IC", "2025.1.4.1")
+        }
+    }
 }
 
 tasks {
     withType<JavaCompile> {
-        sourceCompatibility = "21"
-        targetCompatibility = "21"
-    }
-
-    withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions.jvmTarget = "21"
+        sourceCompatibility = "17"
+        targetCompatibility = "17"
     }
 }
 
 kotlin {
     compilerOptions {
-        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21)
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
