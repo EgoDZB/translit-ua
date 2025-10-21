@@ -31,12 +31,18 @@
     </extensions>
 
     <actions>
-        <action id="dev.idzb.translitua.TranslitUAAction"
-                class="dev.idzb.translitua.TranslitUAAction"
-                text="TranslitUA"
-                description="TranslitUA action"
-                icon="/icons/tUAlogo.svg">
-            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Paste"/>
-        </action>
+        <group id="dev.idzb.translitua.TranslitUAGroup"
+               text="TranslitUA"
+               popup="false"
+               icon="/icons/tUAlogo.svg">
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="EditorToggleColumnMode"/>
+            <separator/>
+            <action id="dev.idzb.translitua.TranslitUAAction"
+                    class="dev.idzb.translitua.TranslitUAAction"
+                    text="TranslitUA"
+                    description="Transliterate Ukrainian Cyrillic to Latin"
+                    icon="/icons/tUAlogo.svg"/>
+            <separator/>
+        </group>
     </actions>
 </idea-plugin>
