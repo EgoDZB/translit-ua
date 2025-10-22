@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "dev.idzb"
-version = "1.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -28,7 +28,7 @@ intellijPlatform {
     pluginConfiguration {
         ideaVersion {
             sinceBuild = "231"
-            untilBuild = "251.*"
+            untilBuild = "252.*"
         }
 
         changeNotes = """

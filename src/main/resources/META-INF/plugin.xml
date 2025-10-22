@@ -21,12 +21,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
-    Initial release
+    Added support for the new version of IDE
   ]]></change-notes>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-    <idea-version since-build="231" until-build="251.*"/>
+    <idea-version since-build="231" until-build="252.*"/>
     <depends>com.intellij.modules.platform</depends>
 
     <!-- Extension points defined by the plugin.
