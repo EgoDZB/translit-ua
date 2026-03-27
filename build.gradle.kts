@@ -1,11 +1,11 @@
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.1.0"
-    id("org.jetbrains.intellij.platform") version "2.10.5"
+    id("org.jetbrains.kotlin.jvm") version "2.3.10"
+    id("org.jetbrains.intellij.platform") version "2.12.0"
 }
 
 group = "dev.idzb"
-version = "1.0.2"
+version = "1.0.3"
 
 repositories {
     mavenCentral()
@@ -18,7 +18,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 
     intellijPlatform {
-        create("IC", "2025.1.4.1")
+        intellijIdea("2026.1")
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
         pluginVerifier()
     }
@@ -28,7 +28,7 @@ intellijPlatform {
     pluginConfiguration {
         ideaVersion {
             sinceBuild = "231"
-            untilBuild = "253.*"
+            untilBuild = "261.*"
         }
 
         changeNotes = """
@@ -40,7 +40,8 @@ intellijPlatform {
         ides {
             create("IC", "2023.1")
             create("IC", "2024.1")
-            create("IC", "2025.1.4.1")
+            create("IC", "2025.1")
+            create("IU", "2026.1")
         }
     }
 }
