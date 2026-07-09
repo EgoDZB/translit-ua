@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "dev.idzb"
-version = "1.0.3"
+version = "1.0.4"
 
 repositories {
     mavenCentral()
@@ -17,9 +17,10 @@ repositories {
 dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 
+    testImplementation(kotlin("test"))
+
     intellijPlatform {
         intellijIdea("2026.1")
-        testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
         pluginVerifier()
     }
 }
@@ -28,11 +29,11 @@ intellijPlatform {
     pluginConfiguration {
         ideaVersion {
             sinceBuild = "231"
-            untilBuild = "261.*"
+            untilBuild = provider { null }
         }
 
         changeNotes = """
-            Initial version
+            Added support for the new version of IDE
         """.trimIndent()
     }
 
@@ -50,6 +51,10 @@ tasks {
     withType<JavaCompile> {
         sourceCompatibility = "17"
         targetCompatibility = "17"
+    }
+
+    test {
+        useJUnitPlatform()
     }
 }
 
