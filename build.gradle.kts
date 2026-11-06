@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "dev.idzb"
-version = "1.0.4"
+version = "1.0.5"
 
 repositories {
     mavenCentral()
@@ -33,7 +33,7 @@ intellijPlatform {
         }
 
         changeNotes = """
-            Added support for the new version of IDE
+            Added support for IDE 2026.3
         """.trimIndent()
     }
 
@@ -43,6 +43,7 @@ intellijPlatform {
             create("IC", "2024.1")
             create("IC", "2025.1")
             create("IU", "2026.1")
+            create("IU", "2026.3")
         }
     }
 }
